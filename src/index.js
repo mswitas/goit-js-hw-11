@@ -32,6 +32,8 @@ searchForm.addEventListener('submit', function (event) {
 
             if (totalPages > 1) {
                 loadMoreWrapper.classList.remove('visually-hidden');
+            } else {
+                endOfScroll.classList.remove('visually-hidden');
             }
 
             if (totalHits > 0) {
